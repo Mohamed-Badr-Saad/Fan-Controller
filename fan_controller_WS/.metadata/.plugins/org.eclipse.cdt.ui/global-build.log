@@ -1,0 +1,1264 @@
+19:37:18 **** Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+Finished building: ../adc.c
+ 
+Building file: ../dc-motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"dc-motor.d" -MT"dc-motor.o" -c -o "dc-motor.o" "../dc-motor.c"
+../dc-motor.c: In function 'DcMotor_Rotate':
+../dc-motor.c:57: warning: implicit declaration of function 'PWM_Timer0_Start'
+Finished building: ../dc-motor.c
+ 
+Building file: ../fan_control.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"fan_control.d" -MT"fan_control.o" -c -o "fan_control.o" "../fan_control.c"
+Finished building: ../fan_control.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../icu.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"icu.d" -MT"icu.o" -c -o "icu.o" "../icu.c"
+../icu.c: In function 'ICU_setCallBackFunction':
+../icu.c:58: warning: function return types not compatible due to 'volatile'
+Finished building: ../icu.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../lcd.c
+ 
+Building file: ../lm35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"lm35.d" -MT"lm35.o" -c -o "lm35.o" "../lm35.c"
+Finished building: ../lm35.c
+ 
+Building file: ../timer0.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"timer0.d" -MT"timer0.o" -c -o "timer0.o" "../timer0.c"
+Finished building: ../timer0.c
+ 
+Building target: Fan_Controller_System.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan_Controller_System.map -mmcu=atmega32 -o "Fan_Controller_System.elf"  ./adc.o ./dc-motor.o ./fan_control.o ./gpio.o ./icu.o ./lcd.o ./lm35.o ./timer0.o   
+Finished building target: Fan_Controller_System.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Fan_Controller_System.elf  >"Fan_Controller_System.lss"
+Finished building: Fan_Controller_System.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller_System.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9652 bytes (29.5% Full)
+(.text + .data + .bootloader)
+
+Data:        268 bytes (13.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:38:16 **** Incremental Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Building file: ../dc-motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"dc-motor.d" -MT"dc-motor.o" -c -o "dc-motor.o" "../dc-motor.c"
+Finished building: ../dc-motor.c
+ 
+Building file: ../timer0.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"timer0.d" -MT"timer0.o" -c -o "timer0.o" "../timer0.c"
+Finished building: ../timer0.c
+ 
+Building target: Fan_Controller_System.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan_Controller_System.map -mmcu=atmega32 -o "Fan_Controller_System.elf"  ./adc.o ./dc-motor.o ./fan_control.o ./gpio.o ./icu.o ./lcd.o ./lm35.o ./timer0.o   
+Finished building target: Fan_Controller_System.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Fan_Controller_System.elf  >"Fan_Controller_System.lss"
+Finished building: Fan_Controller_System.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller_System.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9648 bytes (29.4% Full)
+(.text + .data + .bootloader)
+
+Data:        268 bytes (13.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:11:36 **** Incremental Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+Finished building: ../adc.c
+ 
+Building file: ../dc-motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"dc-motor.d" -MT"dc-motor.o" -c -o "dc-motor.o" "../dc-motor.c"
+Finished building: ../dc-motor.c
+ 
+Building file: ../fan_control.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"fan_control.d" -MT"fan_control.o" -c -o "fan_control.o" "../fan_control.c"
+../fan_control.c: In function 'main':
+../fan_control.c:27: error: invalid type argument of '->' (have 'ADC_config')
+../fan_control.c:28: error: invalid type argument of '->' (have 'ADC_config')
+../fan_control.c:29: error: invalid type argument of '->' (have 'ADC_config')
+../fan_control.c:30: error: invalid type argument of '->' (have 'ADC_config')
+../fan_control.c:73: warning: implicit declaration of function 'CD_diplaystring'
+make: *** [fan_control.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:11:56 **** Incremental Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Building file: ../fan_control.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"fan_control.d" -MT"fan_control.o" -c -o "fan_control.o" "../fan_control.c"
+../fan_control.c: In function 'main':
+../fan_control.c:73: warning: implicit declaration of function 'CD_diplaystring'
+Finished building: ../fan_control.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../lcd.c
+ 
+Building file: ../lm35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"lm35.d" -MT"lm35.o" -c -o "lm35.o" "../lm35.c"
+Finished building: ../lm35.c
+ 
+Building file: ../timer0.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"timer0.d" -MT"timer0.o" -c -o "timer0.o" "../timer0.c"
+Finished building: ../timer0.c
+ 
+Building target: Fan_Controller_System.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan_Controller_System.map -mmcu=atmega32 -o "Fan_Controller_System.elf"  ./adc.o ./dc-motor.o ./fan_control.o ./gpio.o ./lcd.o ./lm35.o ./timer0.o   
+./fan_control.o: In function `main':
+../fan_control.c:72: undefined reference to `CD_diplaystring'
+make: *** [Fan_Controller_System.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:12:18 **** Incremental Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Building file: ../fan_control.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"fan_control.d" -MT"fan_control.o" -c -o "fan_control.o" "../fan_control.c"
+Finished building: ../fan_control.c
+ 
+Building target: Fan_Controller_System.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan_Controller_System.map -mmcu=atmega32 -o "Fan_Controller_System.elf"  ./adc.o ./dc-motor.o ./fan_control.o ./gpio.o ./lcd.o ./lm35.o ./timer0.o   
+Finished building target: Fan_Controller_System.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Fan_Controller_System.elf  >"Fan_Controller_System.lss"
+Finished building: Fan_Controller_System.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller_System.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9392 bytes (28.7% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:15:21 **** Incremental Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Building file: ../fan_control.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"fan_control.d" -MT"fan_control.o" -c -o "fan_control.o" "../fan_control.c"
+Finished building: ../fan_control.c
+ 
+Building target: Fan_Controller_System.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan_Controller_System.map -mmcu=atmega32 -o "Fan_Controller_System.elf"  ./adc.o ./dc-motor.o ./fan_control.o ./gpio.o ./lcd.o ./lm35.o ./timer0.o   
+Finished building target: Fan_Controller_System.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Fan_Controller_System.elf  >"Fan_Controller_System.lss"
+Finished building: Fan_Controller_System.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller_System.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9400 bytes (28.7% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:18:49 **** Incremental Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Building file: ../fan_control.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"fan_control.d" -MT"fan_control.o" -c -o "fan_control.o" "../fan_control.c"
+../fan_control.c: In function 'main':
+../fan_control.c:24: warning: unused variable 'FAN_state'
+../fan_control.c:23: warning: unused variable 'temperature'
+Finished building: ../fan_control.c
+ 
+Building target: Fan_Controller_System.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan_Controller_System.map -mmcu=atmega32 -o "Fan_Controller_System.elf"  ./adc.o ./dc-motor.o ./fan_control.o ./gpio.o ./lcd.o ./lm35.o ./timer0.o   
+Finished building target: Fan_Controller_System.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Fan_Controller_System.elf  >"Fan_Controller_System.lss"
+Finished building: Fan_Controller_System.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller_System.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9166 bytes (28.0% Full)
+(.text + .data + .bootloader)
+
+Data:        272 bytes (13.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:22:33 **** Incremental Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Building file: ../fan_control.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"fan_control.d" -MT"fan_control.o" -c -o "fan_control.o" "../fan_control.c"
+Finished building: ../fan_control.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../lcd.c
+ 
+Building target: Fan_Controller_System.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan_Controller_System.map -mmcu=atmega32 -o "Fan_Controller_System.elf"  ./adc.o ./dc-motor.o ./fan_control.o ./gpio.o ./lcd.o ./lm35.o ./timer0.o   
+Finished building target: Fan_Controller_System.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Fan_Controller_System.elf  >"Fan_Controller_System.lss"
+Finished building: Fan_Controller_System.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller_System.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9392 bytes (28.7% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:23:51 **** Incremental Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Building file: ../fan_control.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"fan_control.d" -MT"fan_control.o" -c -o "fan_control.o" "../fan_control.c"
+Finished building: ../fan_control.c
+ 
+Building target: Fan_Controller_System.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan_Controller_System.map -mmcu=atmega32 -o "Fan_Controller_System.elf"  ./adc.o ./dc-motor.o ./fan_control.o ./gpio.o ./lcd.o ./lm35.o ./timer0.o   
+Finished building target: Fan_Controller_System.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Fan_Controller_System.elf  >"Fan_Controller_System.lss"
+Finished building: Fan_Controller_System.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller_System.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9406 bytes (28.7% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:24:13 **** Incremental Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Building file: ../fan_control.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"fan_control.d" -MT"fan_control.o" -c -o "fan_control.o" "../fan_control.c"
+Finished building: ../fan_control.c
+ 
+Building target: Fan_Controller_System.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan_Controller_System.map -mmcu=atmega32 -o "Fan_Controller_System.elf"  ./adc.o ./dc-motor.o ./fan_control.o ./gpio.o ./lcd.o ./lm35.o ./timer0.o   
+Finished building target: Fan_Controller_System.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Fan_Controller_System.elf  >"Fan_Controller_System.lss"
+Finished building: Fan_Controller_System.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller_System.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9420 bytes (28.7% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:24:15 **** Incremental Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Building file: ../fan_control.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"fan_control.d" -MT"fan_control.o" -c -o "fan_control.o" "../fan_control.c"
+Finished building: ../fan_control.c
+ 
+Building target: Fan_Controller_System.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan_Controller_System.map -mmcu=atmega32 -o "Fan_Controller_System.elf"  ./adc.o ./dc-motor.o ./fan_control.o ./gpio.o ./lcd.o ./lm35.o ./timer0.o   
+Finished building target: Fan_Controller_System.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Fan_Controller_System.elf  >"Fan_Controller_System.lss"
+Finished building: Fan_Controller_System.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller_System.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9420 bytes (28.7% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:26:15 **** Incremental Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Building file: ../fan_control.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"fan_control.d" -MT"fan_control.o" -c -o "fan_control.o" "../fan_control.c"
+Finished building: ../fan_control.c
+ 
+Building target: Fan_Controller_System.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan_Controller_System.map -mmcu=atmega32 -o "Fan_Controller_System.elf"  ./adc.o ./dc-motor.o ./fan_control.o ./gpio.o ./lcd.o ./lm35.o ./timer0.o   
+Finished building target: Fan_Controller_System.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Fan_Controller_System.elf  >"Fan_Controller_System.lss"
+Finished building: Fan_Controller_System.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller_System.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9392 bytes (28.7% Full)
+(.text + .data + .bootloader)
+
+Data:        296 bytes (14.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:37:00 **** Incremental Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Building file: ../dc-motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"dc-motor.d" -MT"dc-motor.o" -c -o "dc-motor.o" "../dc-motor.c"
+Finished building: ../dc-motor.c
+ 
+Building file: ../fan_control.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"fan_control.d" -MT"fan_control.o" -c -o "fan_control.o" "../fan_control.c"
+Finished building: ../fan_control.c
+ 
+Building target: Fan_Controller_System.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan_Controller_System.map -mmcu=atmega32 -o "Fan_Controller_System.elf"  ./adc.o ./dc-motor.o ./fan_control.o ./gpio.o ./lcd.o ./lm35.o ./timer0.o   
+Finished building target: Fan_Controller_System.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Fan_Controller_System.elf  >"Fan_Controller_System.lss"
+Finished building: Fan_Controller_System.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller_System.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9404 bytes (28.7% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:40:36 **** Incremental Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Building file: ../fan_control.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"fan_control.d" -MT"fan_control.o" -c -o "fan_control.o" "../fan_control.c"
+Finished building: ../fan_control.c
+ 
+Building target: Fan_Controller_System.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan_Controller_System.map -mmcu=atmega32 -o "Fan_Controller_System.elf"  ./adc.o ./dc-motor.o ./fan_control.o ./gpio.o ./lcd.o ./lm35.o ./timer0.o   
+Finished building target: Fan_Controller_System.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Fan_Controller_System.elf  >"Fan_Controller_System.lss"
+Finished building: Fan_Controller_System.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller_System.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9404 bytes (28.7% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:42:41 **** Incremental Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Building file: ../lm35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"lm35.d" -MT"lm35.o" -c -o "lm35.o" "../lm35.c"
+Finished building: ../lm35.c
+ 
+Building target: Fan_Controller_System.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan_Controller_System.map -mmcu=atmega32 -o "Fan_Controller_System.elf"  ./adc.o ./dc-motor.o ./fan_control.o ./gpio.o ./lcd.o ./lm35.o ./timer0.o   
+Finished building target: Fan_Controller_System.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Fan_Controller_System.elf  >"Fan_Controller_System.lss"
+Finished building: Fan_Controller_System.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller_System.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9466 bytes (28.9% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:47:23 **** Incremental Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Building file: ../lm35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"lm35.d" -MT"lm35.o" -c -o "lm35.o" "../lm35.c"
+Finished building: ../lm35.c
+ 
+Building target: Fan_Controller_System.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan_Controller_System.map -mmcu=atmega32 -o "Fan_Controller_System.elf"  ./adc.o ./dc-motor.o ./fan_control.o ./gpio.o ./lcd.o ./lm35.o ./timer0.o   
+Finished building target: Fan_Controller_System.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Fan_Controller_System.elf  >"Fan_Controller_System.lss"
+Finished building: Fan_Controller_System.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller_System.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8310 bytes (25.4% Full)
+(.text + .data + .bootloader)
+
+Data:         42 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:48:01 **** Incremental Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Building file: ../lm35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"lm35.d" -MT"lm35.o" -c -o "lm35.o" "../lm35.c"
+Finished building: ../lm35.c
+ 
+Building target: Fan_Controller_System.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan_Controller_System.map -mmcu=atmega32 -o "Fan_Controller_System.elf"  ./adc.o ./dc-motor.o ./fan_control.o ./gpio.o ./lcd.o ./lm35.o ./timer0.o   
+Finished building target: Fan_Controller_System.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Fan_Controller_System.elf  >"Fan_Controller_System.lss"
+Finished building: Fan_Controller_System.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller_System.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9466 bytes (28.9% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:48:32 **** Incremental Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Building file: ../lm35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"lm35.d" -MT"lm35.o" -c -o "lm35.o" "../lm35.c"
+Finished building: ../lm35.c
+ 
+Building target: Fan_Controller_System.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan_Controller_System.map -mmcu=atmega32 -o "Fan_Controller_System.elf"  ./adc.o ./dc-motor.o ./fan_control.o ./gpio.o ./lcd.o ./lm35.o ./timer0.o   
+Finished building target: Fan_Controller_System.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Fan_Controller_System.elf  >"Fan_Controller_System.lss"
+Finished building: Fan_Controller_System.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller_System.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8312 bytes (25.4% Full)
+(.text + .data + .bootloader)
+
+Data:         42 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:49:05 **** Incremental Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Building file: ../lm35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"lm35.d" -MT"lm35.o" -c -o "lm35.o" "../lm35.c"
+Finished building: ../lm35.c
+ 
+Building target: Fan_Controller_System.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan_Controller_System.map -mmcu=atmega32 -o "Fan_Controller_System.elf"  ./adc.o ./dc-motor.o ./fan_control.o ./gpio.o ./lcd.o ./lm35.o ./timer0.o   
+Finished building target: Fan_Controller_System.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Fan_Controller_System.elf  >"Fan_Controller_System.lss"
+Finished building: Fan_Controller_System.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller_System.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8312 bytes (25.4% Full)
+(.text + .data + .bootloader)
+
+Data:         42 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:50:19 **** Incremental Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Building file: ../lm35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"lm35.d" -MT"lm35.o" -c -o "lm35.o" "../lm35.c"
+Finished building: ../lm35.c
+ 
+Building target: Fan_Controller_System.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan_Controller_System.map -mmcu=atmega32 -o "Fan_Controller_System.elf"  ./adc.o ./dc-motor.o ./fan_control.o ./gpio.o ./lcd.o ./lm35.o ./timer0.o   
+Finished building target: Fan_Controller_System.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Fan_Controller_System.elf  >"Fan_Controller_System.lss"
+Finished building: Fan_Controller_System.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller_System.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9466 bytes (28.9% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:51:05 **** Incremental Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller_System.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9466 bytes (28.9% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:53:48 **** Incremental Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Building file: ../lm35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"lm35.d" -MT"lm35.o" -c -o "lm35.o" "../lm35.c"
+Finished building: ../lm35.c
+ 
+Building target: Fan_Controller_System.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan_Controller_System.map -mmcu=atmega32 -o "Fan_Controller_System.elf"  ./adc.o ./dc-motor.o ./fan_control.o ./gpio.o ./lcd.o ./lm35.o ./timer0.o   
+Finished building target: Fan_Controller_System.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Fan_Controller_System.elf  >"Fan_Controller_System.lss"
+Finished building: Fan_Controller_System.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller_System.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8312 bytes (25.4% Full)
+(.text + .data + .bootloader)
+
+Data:         42 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:54:31 **** Incremental Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Building file: ../lm35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"lm35.d" -MT"lm35.o" -c -o "lm35.o" "../lm35.c"
+Finished building: ../lm35.c
+ 
+Building target: Fan_Controller_System.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan_Controller_System.map -mmcu=atmega32 -o "Fan_Controller_System.elf"  ./adc.o ./dc-motor.o ./fan_control.o ./gpio.o ./lcd.o ./lm35.o ./timer0.o   
+Finished building target: Fan_Controller_System.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Fan_Controller_System.elf  >"Fan_Controller_System.lss"
+Finished building: Fan_Controller_System.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller_System.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9466 bytes (28.9% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:56:45 **** Incremental Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Building file: ../lm35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"lm35.d" -MT"lm35.o" -c -o "lm35.o" "../lm35.c"
+Finished building: ../lm35.c
+ 
+Building target: Fan_Controller_System.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan_Controller_System.map -mmcu=atmega32 -o "Fan_Controller_System.elf"  ./adc.o ./dc-motor.o ./fan_control.o ./gpio.o ./lcd.o ./lm35.o ./timer0.o   
+Finished building target: Fan_Controller_System.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Fan_Controller_System.elf  >"Fan_Controller_System.lss"
+Finished building: Fan_Controller_System.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller_System.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9466 bytes (28.9% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:58:31 **** Incremental Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Building file: ../fan_control.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"fan_control.d" -MT"fan_control.o" -c -o "fan_control.o" "../fan_control.c"
+Finished building: ../fan_control.c
+ 
+Building file: ../lm35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"lm35.d" -MT"lm35.o" -c -o "lm35.o" "../lm35.c"
+Finished building: ../lm35.c
+ 
+Building target: Fan_Controller_System.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan_Controller_System.map -mmcu=atmega32 -o "Fan_Controller_System.elf"  ./adc.o ./dc-motor.o ./fan_control.o ./gpio.o ./lcd.o ./lm35.o ./timer0.o   
+Finished building target: Fan_Controller_System.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Fan_Controller_System.elf  >"Fan_Controller_System.lss"
+Finished building: Fan_Controller_System.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller_System.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9464 bytes (28.9% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:59:44 **** Incremental Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Building file: ../fan_control.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"fan_control.d" -MT"fan_control.o" -c -o "fan_control.o" "../fan_control.c"
+Finished building: ../fan_control.c
+ 
+Building file: ../lm35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"lm35.d" -MT"lm35.o" -c -o "lm35.o" "../lm35.c"
+Finished building: ../lm35.c
+ 
+Building target: Fan_Controller_System.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan_Controller_System.map -mmcu=atmega32 -o "Fan_Controller_System.elf"  ./adc.o ./dc-motor.o ./fan_control.o ./gpio.o ./lcd.o ./lm35.o ./timer0.o   
+Finished building target: Fan_Controller_System.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Fan_Controller_System.elf  >"Fan_Controller_System.lss"
+Finished building: Fan_Controller_System.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller_System.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9466 bytes (28.9% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:04:52 **** Incremental Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Building file: ../fan_control.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"fan_control.d" -MT"fan_control.o" -c -o "fan_control.o" "../fan_control.c"
+Finished building: ../fan_control.c
+ 
+Building target: Fan_Controller_System.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan_Controller_System.map -mmcu=atmega32 -o "Fan_Controller_System.elf"  ./adc.o ./dc-motor.o ./fan_control.o ./gpio.o ./lcd.o ./lm35.o ./timer0.o   
+Finished building target: Fan_Controller_System.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Fan_Controller_System.elf  >"Fan_Controller_System.lss"
+Finished building: Fan_Controller_System.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller_System.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9466 bytes (28.9% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:35:49 **** Incremental Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+Finished building: ../adc.c
+ 
+Building file: ../dc-motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"dc-motor.d" -MT"dc-motor.o" -c -o "dc-motor.o" "../dc-motor.c"
+Finished building: ../dc-motor.c
+ 
+Building file: ../fan_control.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"fan_control.d" -MT"fan_control.o" -c -o "fan_control.o" "../fan_control.c"
+Finished building: ../fan_control.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../lcd.c
+ 
+Building file: ../lm35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"lm35.d" -MT"lm35.o" -c -o "lm35.o" "../lm35.c"
+Finished building: ../lm35.c
+ 
+Building file: ../timer0.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"timer0.d" -MT"timer0.o" -c -o "timer0.o" "../timer0.c"
+Finished building: ../timer0.c
+ 
+Building target: Fan_Controller_System.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan_Controller_System.map -mmcu=atmega32 -o "Fan_Controller_System.elf"  ./adc.o ./dc-motor.o ./fan_control.o ./gpio.o ./lcd.o ./lm35.o ./timer0.o   
+Finished building target: Fan_Controller_System.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Fan_Controller_System.elf  >"Fan_Controller_System.lss"
+Finished building: Fan_Controller_System.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller_System.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9466 bytes (28.9% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:47:40 **** Incremental Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Building file: ../dc-motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"dc-motor.d" -MT"dc-motor.o" -c -o "dc-motor.o" "../dc-motor.c"
+Finished building: ../dc-motor.c
+ 
+Building file: ../fan_control.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"fan_control.d" -MT"fan_control.o" -c -o "fan_control.o" "../fan_control.c"
+Finished building: ../fan_control.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:19:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../lcd.c
+ 
+Building target: Fan_Controller_System.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan_Controller_System.map -mmcu=atmega32 -o "Fan_Controller_System.elf"  ./adc.o ./dc-motor.o ./fan_control.o ./gpio.o ./lcd.o ./lm35.o ./timer0.o   
+Finished building target: Fan_Controller_System.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Fan_Controller_System.elf  >"Fan_Controller_System.lss"
+Finished building: Fan_Controller_System.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller_System.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9466 bytes (28.9% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:37:43 **** Incremental Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+Finished building: ../adc.c
+ 
+Building file: ../dc-motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"dc-motor.d" -MT"dc-motor.o" -c -o "dc-motor.o" "../dc-motor.c"
+Finished building: ../dc-motor.c
+ 
+Building file: ../fan_control.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"fan_control.d" -MT"fan_control.o" -c -o "fan_control.o" "../fan_control.c"
+Finished building: ../fan_control.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:18:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../lcd.c
+ 
+Building file: ../lm35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"lm35.d" -MT"lm35.o" -c -o "lm35.o" "../lm35.c"
+Finished building: ../lm35.c
+ 
+Building file: ../timer0.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"timer0.d" -MT"timer0.o" -c -o "timer0.o" "../timer0.c"
+Finished building: ../timer0.c
+ 
+Building target: Fan_Controller_System.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan_Controller_System.map -mmcu=atmega32 -o "Fan_Controller_System.elf"  ./adc.o ./dc-motor.o ./fan_control.o ./gpio.o ./lcd.o ./lm35.o ./timer0.o   
+Finished building target: Fan_Controller_System.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Fan_Controller_System.elf  >"Fan_Controller_System.lss"
+Finished building: Fan_Controller_System.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller_System.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9466 bytes (28.9% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:56:12 **** Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+Finished building: ../adc.c
+ 
+Building file: ../dc-motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"dc-motor.d" -MT"dc-motor.o" -c -o "dc-motor.o" "../dc-motor.c"
+Finished building: ../dc-motor.c
+ 
+Building file: ../fan_control.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"fan_control.d" -MT"fan_control.o" -c -o "fan_control.o" "../fan_control.c"
+Finished building: ../fan_control.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:18:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../lcd.c
+ 
+Building file: ../lm35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"lm35.d" -MT"lm35.o" -c -o "lm35.o" "../lm35.c"
+Finished building: ../lm35.c
+ 
+Building file: ../timer0.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"timer0.d" -MT"timer0.o" -c -o "timer0.o" "../timer0.c"
+Finished building: ../timer0.c
+ 
+Building target: Fan_Controller_System.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan_Controller_System.map -mmcu=atmega32 -o "Fan_Controller_System.elf"  ./adc.o ./dc-motor.o ./fan_control.o ./gpio.o ./lcd.o ./lm35.o ./timer0.o   
+Finished building target: Fan_Controller_System.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Fan_Controller_System.elf  >"Fan_Controller_System.lss"
+Finished building: Fan_Controller_System.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller_System.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9466 bytes (28.9% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:01:15 **** Clean-only build of configuration Debug for project Fan_Controller_System ****
+make clean 
+rm -rf  ./adc.o ./dc-motor.o ./fan_control.o ./gpio.o ./lcd.o ./lm35.o ./timer0.o  sizedummy  Fan_Controller_System.lss  ./adc.d ./dc-motor.d ./fan_control.d ./gpio.d ./lcd.d ./lm35.d ./timer0.d  Fan_Controller_System.elf
+ 
+16:01:15 **** Incremental Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Building file: ../MCAL/source/adc.c
+Invoking: AVR Compiler
+avr-gcc -I"G:\university\GitHub\Fan-Controller\Mini_Project3_WS\Fan_Controller_System\APP" -I"G:\university\GitHub\Fan-Controller\Mini_Project3_WS\Fan_Controller_System\HAL\include" -I"G:\university\GitHub\Fan-Controller\Mini_Project3_WS\Fan_Controller_System\MCAL\include" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/source/adc.d" -MT"MCAL/source/adc.o" -c -o "MCAL/source/adc.o" "../MCAL/source/adc.c"
+Finished building: ../MCAL/source/adc.c
+ 
+Building file: ../MCAL/source/gpio.c
+Invoking: AVR Compiler
+avr-gcc -I"G:\university\GitHub\Fan-Controller\Mini_Project3_WS\Fan_Controller_System\APP" -I"G:\university\GitHub\Fan-Controller\Mini_Project3_WS\Fan_Controller_System\HAL\include" -I"G:\university\GitHub\Fan-Controller\Mini_Project3_WS\Fan_Controller_System\MCAL\include" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/source/gpio.d" -MT"MCAL/source/gpio.o" -c -o "MCAL/source/gpio.o" "../MCAL/source/gpio.c"
+Finished building: ../MCAL/source/gpio.c
+ 
+Building file: ../MCAL/source/timer0.c
+Invoking: AVR Compiler
+avr-gcc -I"G:\university\GitHub\Fan-Controller\Mini_Project3_WS\Fan_Controller_System\APP" -I"G:\university\GitHub\Fan-Controller\Mini_Project3_WS\Fan_Controller_System\HAL\include" -I"G:\university\GitHub\Fan-Controller\Mini_Project3_WS\Fan_Controller_System\MCAL\include" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/source/timer0.d" -MT"MCAL/source/timer0.o" -c -o "MCAL/source/timer0.o" "../MCAL/source/timer0.c"
+Finished building: ../MCAL/source/timer0.c
+ 
+Building file: ../HAL/source/dc-motor.c
+Invoking: AVR Compiler
+avr-gcc -I"G:\university\GitHub\Fan-Controller\Mini_Project3_WS\Fan_Controller_System\APP" -I"G:\university\GitHub\Fan-Controller\Mini_Project3_WS\Fan_Controller_System\HAL\include" -I"G:\university\GitHub\Fan-Controller\Mini_Project3_WS\Fan_Controller_System\MCAL\include" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"HAL/source/dc-motor.d" -MT"HAL/source/dc-motor.o" -c -o "HAL/source/dc-motor.o" "../HAL/source/dc-motor.c"
+Finished building: ../HAL/source/dc-motor.c
+ 
+Building file: ../HAL/source/lcd.c
+Invoking: AVR Compiler
+avr-gcc -I"G:\university\GitHub\Fan-Controller\Mini_Project3_WS\Fan_Controller_System\APP" -I"G:\university\GitHub\Fan-Controller\Mini_Project3_WS\Fan_Controller_System\HAL\include" -I"G:\university\GitHub\Fan-Controller\Mini_Project3_WS\Fan_Controller_System\MCAL\include" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"HAL/source/lcd.d" -MT"HAL/source/lcd.o" -c -o "HAL/source/lcd.o" "../HAL/source/lcd.c"
+In file included from ../HAL/source/lcd.c:18:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/source/lcd.c
+ 
+Building file: ../HAL/source/lm35.c
+Invoking: AVR Compiler
+avr-gcc -I"G:\university\GitHub\Fan-Controller\Mini_Project3_WS\Fan_Controller_System\APP" -I"G:\university\GitHub\Fan-Controller\Mini_Project3_WS\Fan_Controller_System\HAL\include" -I"G:\university\GitHub\Fan-Controller\Mini_Project3_WS\Fan_Controller_System\MCAL\include" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"HAL/source/lm35.d" -MT"HAL/source/lm35.o" -c -o "HAL/source/lm35.o" "../HAL/source/lm35.c"
+Finished building: ../HAL/source/lm35.c
+ 
+Building file: ../APP/fan_control_main.c
+Invoking: AVR Compiler
+avr-gcc -I"G:\university\GitHub\Fan-Controller\Mini_Project3_WS\Fan_Controller_System\APP" -I"G:\university\GitHub\Fan-Controller\Mini_Project3_WS\Fan_Controller_System\HAL\include" -I"G:\university\GitHub\Fan-Controller\Mini_Project3_WS\Fan_Controller_System\MCAL\include" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/fan_control_main.d" -MT"APP/fan_control_main.o" -c -o "APP/fan_control_main.o" "../APP/fan_control_main.c"
+Finished building: ../APP/fan_control_main.c
+ 
+make: *** No rule to make target `adc.o', needed by `Fan_Controller_System.elf'.  Stop.
+"make all" terminated with exit code 2. Build might be incomplete.
+16:01:28 **** Incremental Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Building file: ../fan_control_main.c
+Invoking: AVR Compiler
+avr-gcc -I"G:\university\GitHub\Fan-Controller\Mini_Project3_WS\Fan_Controller_System\APP" -I"G:\university\GitHub\Fan-Controller\Mini_Project3_WS\Fan_Controller_System\HAL\include" -I"G:\university\GitHub\Fan-Controller\Mini_Project3_WS\Fan_Controller_System\MCAL\include" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"fan_control_main.d" -MT"fan_control_main.o" -c -o "fan_control_main.o" "../fan_control_main.c"
+Finished building: ../fan_control_main.c
+ 
+Building target: Fan_Controller_System.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan_Controller_System.map -mmcu=atmega32 -o "Fan_Controller_System.elf"  ./MCAL/source/adc.o ./MCAL/source/gpio.o ./MCAL/source/timer0.o  ./HAL/source/dc-motor.o ./HAL/source/lcd.o ./HAL/source/lm35.o  ./fan_control_main.o   
+Finished building target: Fan_Controller_System.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Fan_Controller_System.elf  >"Fan_Controller_System.lss"
+Finished building: Fan_Controller_System.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Fan_Controller_System.elf  "Fan_Controller_System.hex"
+Finished building: Fan_Controller_System.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller_System.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9466 bytes (28.9% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:01:33 **** Incremental Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Building file: ../APP/fan_control_main.c
+Invoking: AVR Compiler
+avr-gcc -I"G:\university\GitHub\Fan-Controller\Mini_Project3_WS\Fan_Controller_System\APP" -I"G:\university\GitHub\Fan-Controller\Mini_Project3_WS\Fan_Controller_System\HAL\include" -I"G:\university\GitHub\Fan-Controller\Mini_Project3_WS\Fan_Controller_System\MCAL\include" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"APP/fan_control_main.d" -MT"APP/fan_control_main.o" -c -o "APP/fan_control_main.o" "../APP/fan_control_main.c"
+Finished building: ../APP/fan_control_main.c
+ 
+Building target: Fan_Controller_System.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Fan_Controller_System.map -mmcu=atmega32 -o "Fan_Controller_System.elf"  ./MCAL/source/adc.o ./MCAL/source/gpio.o ./MCAL/source/timer0.o  ./HAL/source/dc-motor.o ./HAL/source/lcd.o ./HAL/source/lm35.o  ./APP/fan_control_main.o   
+Finished building target: Fan_Controller_System.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Fan_Controller_System.elf  >"Fan_Controller_System.lss"
+Finished building: Fan_Controller_System.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Fan_Controller_System.elf  "Fan_Controller_System.hex"
+Finished building: Fan_Controller_System.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller_System.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9466 bytes (28.9% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:01:37 **** Incremental Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller_System.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9466 bytes (28.9% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:01:51 **** Incremental Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller_System.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9466 bytes (28.9% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

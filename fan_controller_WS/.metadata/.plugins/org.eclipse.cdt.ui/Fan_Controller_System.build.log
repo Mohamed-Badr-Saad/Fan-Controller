@@ -1,0 +1,20 @@
+16:01:51 **** Incremental Build of configuration Debug for project Fan_Controller_System ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Fan_Controller_System.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9466 bytes (28.9% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+16:01:51 Build Finished. 0 errors, 0 warnings. (took 152ms)
+
